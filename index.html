@@ -1,5 +1,136 @@
-<html>
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <!--{META}-->
+    <meta charset="UTF-8">
+    <meta name="description" content="I am a full stack web developer who started developing my skills in 2005. I am capable of maintaining legacy software and scaling modern enterprise level software on on-site and remote servers that run Debian, Centos or RedHat Linux environments.">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Brandon Weigand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+
+    <!--{THUMBNAILS}-->
+            <meta name="thumbnail" content="./screenshot0.jpeg">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="./screenshot0.jpeg">
+    
+    <!--{TITLE}-->
+    <title>A website for my public projects</title>
+    
+    <!--{PRELOADS}-->
+    <link rel="preload" href="https://brandonweigand.github.io/sw-client.js" as="script">
+    <link rel="preload" href="https://brandonweigand.github.io/style.css" as="style">
+    
+    <!--{APP_SETTINGS}-->
+    <link rel="canonical" href="UPDATE_MANUALLY">
+    <link rel="manifest" href="https://brandonweigand.github.io/manifest.json" crossorigin="use-credentials">
+    <meta name="copyright" content="https://brandonweigand.github.io/LICENSE">
+    <meta name="attribution" content="https://brandonweigand.github.io/attribution.json">
+    <meta name="theme-color" content="red">
+
+    <!--{ICONS}-->
+    <link rel="apple-touch-icon" href="https://brandonweigand.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://brandonweigand.github.io/favicon.ico">
+
+    <!--{STYLES}-->
+    <style>
+    html{
+        --theme-color:red;
+        --background-primary:#fff;
+        --border-primary:#fcc;
+        --font-primary:#000;
+        --background-highlight:#333;
+        --border-highlight:3cc;       
+        --font-highlight:#fff;
+        --background-action:#fff;
+        --border-action:#fef;
+        --font-action:#000;
+    }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!--{SCRIPTS-HEADER}-->
+    <script src="./sw-client.js"></script>
+
+</head>
 <body>
-Test
-</body>
-</html>
+    <a id="skip-nav" class="screenreader-text" href="#CONTENT">Skip to Content</a>
+    <!--{LOGIC}-->
+    <input type="radio" id="input_NOBAR" name="NAVBAR" for="NOBAR" hidden="">
+    <input type="radio" id="input_NAVBAR" name="NAVBAR" for="NAVBAR" hidden="">
+    <input type="radio" id="input_SIDEBAR" name="NAVBAR" for="SIDEBAR" hidden="">
+    <header>
+        <nav id="SIDEBAR" class="SIDEBAR">
+            <a class="screenreader-text" href="#SIDEBAR">Side Bar Menu</a>
+            <!--{SIDEBAR}-->
+            <article id="DESCRIPTION">
+                <!-- 
+                    This section is needed for SEO :'( 
+                    DESCRIPTION MUST
+                        1: contain the meta key words
+                        2: be human readable
+                -->
+                <h1>A website for my public projects</h1>
+                I am a full stack web developer who started developing my skills in 2005. I am capable of maintaining legacy software and scaling modern enterprise level software on on-site and remote servers that run Debian, Centos or RedHat Linux environments.            </article>
+        </nav>
+        
+        <nav id="NAVBAR" class="NAVBAR">
+            <a class="screenreader-text" href="#NAVBAR">Navigation Menu</a>
+            <!--{NAV}-->
+            <a href="#link-github-sponsor">Github</a>
+        </nav>
+        <nav id="MENUBAR" class="MENUBAR">
+            <span id="btn_NAVBAR"><label for="input_NAVBAR" class="open_NAVBAR">Ⓥ</label><label for="input_NOBAR" class="close_NAVBAR">Ⓧ</label></span>
+            <span id="btn_SIDEBAR"><label for="input_SIDEBAR" class="open_SIDEBAR">ⓘ</label><label for="input_NOBAR" class="close_SIDEBAR">Ⓧ</label></span>
+        </nav>
+    </header>
+    <div id="CONTENT">      
+        <article>
+            <h2>TEST Header</h2>
+            <p>Minim culpa exercitation exercitation dolor ex incididunt irure.</p>
+            <p>Nostrud dolore sint non nulla et quis pariatur.Elit excepteur do sint Lorem aliqua excepteur tempor officia ea aliqua deserunt quis consequat nostrud.Veniam incididunt non amet pariatur ea duis veniam.Ad amet sunt eiusmod elit enim eu voluptate eu dolore id minim nulla esse.Voluptate dolor sunt nisi exercitation in mollit proident.Laboris cupidatat in elit ex.Dolor ea veniam voluptate irure.Dolore qui esse proident ipsum ullamco officia elit excepteur id labore.Aliquip amet Lorem sint laborum esse labore dolor dolor tempor minim Lorem est.Magna esse ullamco consequat nisi minim deserunt nulla nulla labore aliquip.Deserunt consequat occaecat nostrud commodo culpa eu do minim culpa voluptate ipsum aliquip consectetur.Sit dolore nisi commodo cillum ipsum non deserunt aliqua.Ipsum excepteur pariatur cillum sint id aliquip dolor irure duis.Amet enim eiusmod ut deserunt cupidatat ut minim non anim consectetur.Ullamco excepteur officia ipsum ipsum labore duis non cillum amet ipsum aliquip.Esse nostrud cupidatat Lorem mollit velit proident laborum laboris.Sit voluptate velit sint amet dolor.Amet ipsum quis proident consequat esse eu culpa.Labore eiusmod adipisicing labore laborum duis exercitation aute aliquip.Elit esse et enim exercitation.Qui nulla commodo et quis Lorem enim.Lorem magna duis consequat pariatur enim reprehenderit minim.Excepteur velit Lorem ut dolor do pariatur nulla in deserunt consectetur reprehenderit in qui.</p>
+        </article>
+        <br>*
+        <br>*
+        <br>*
+        <br>*
+        <div style="height:300vh;"></div>
+        <br>*
+        <br>*
+        <br>*
+        <br>*
+        <ads>
+        </ads>
+    </div>
+    <footer>
+        <!--{LINKS}-->
+        <nav onfocusin="event.target.click();">
+            <!--{EXTERNAL-LINKS}-->
+            <ul>
+                <li><a id="link-github-sponsor" target="_blank" href="https://github.com/sponsors/BrandonWeigand">Github Sponsor</a></li>
+                <li><a id="link-github-profile" target="_blank" href="https://github.com/BrandonWeigand">Github Profile</a></li>
+            </ul>
+            <!--{SITEMAP}-->
+            <ul>
+                 
+                    <li><a id="link-sitemap-0" target="_self" href="https://brandonweigand.tk">   brandonweigand.tk</a></li>
+                 
+                    <li><a id="link-sitemap-1" target="_self" href="https://brandonweigand.tk/attribution.json">   brandonweigand.tk attribution.json</a></li>
+                 
+                    <li><a id="link-sitemap-2" target="_self" href="https://brandonweigand.tk/README.md">   brandonweigand.tk README.md</a></li>
+                 
+                    <li><a id="link-sitemap-3" target="_self" href="https://brandonweigand.github.io/BrandonWeigand/">  BrandonWeigand </a></li>
+                 
+                    <li><a id="link-sitemap-4" target="_self" href="https://brandonweigand.github.io/BrandonWeigand/attribution.json">  BrandonWeigand attribution.json</a></li>
+                 
+                    <li><a id="link-sitemap-5" target="_self" href="https://brandonweigand.github.io/BrandonWeigand/README.md">  BrandonWeigand README.md</a></li>
+                 
+                    <li><a id="link-sitemap-6" target="_self" href="https://brandonweigand.github.io/BrandonWeigand/LICENSE">  BrandonWeigand LICENSE</a></li>
+                            </ul>
+        </nav>
+    </footer>
+    <!--{SCRIPTS_FOOTER}-->
+    <script defer="">
+        document.querySelectorAll('footer>nav')[0].setAttribute('onfocusin',"event.target.click();");
+    </script>
+
+</body></html>

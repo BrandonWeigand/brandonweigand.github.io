@@ -1,0 +1,127 @@
+{
+  "version": "0.1",
+
+
+  "author": "Brandon Weigand",
+  "publisher": "Brandon Weigand",
+  "creator":"Brandon Weigand",
+  "generator":"Brandon Weigand",
+
+
+  "name": "Brandon Weigand's Github",
+  "short_name": "BW Github",
+  "title":"A website for my public projects",
+
+  "date":"2022-04-17 22:58:00",
+  "last-modified":"2022-04-17 22:58:00",
+
+
+  "start_url": ".",
+  "prefer_related_applications": true,
+  "scope": "./",
+  "homepage_url": "https://brandonweigand.github.io",
+
+
+  "display": "fullscreen",
+  "window-target":"_top",
+
+
+  "description": "I am a full stack web developer who started developing my skills in 2005. I am capable of maintaining legacy software and scaling modern enterprise level software on on-site and remote servers that run Debian, Centos or RedHat Linux environments.",
+
+
+  "categories": ["test", "debug", "website"],
+  "type":"website",
+  "keywords":["HTML", "CSS", "JavaScript"],
+
+
+  "color-scheme":"light dark",
+  "theme_color":"red",
+  "background_color": "#fff",
+
+
+  "color-schemes":{
+    "light":{
+      "background-primary":"#fff",
+      "border-primary":"#fcc",
+      "font-primary":"#000",
+      "background-highlight":"#333",
+      "border-highlight":"3cc",
+      "font-highlight":"#fff",
+      "background-action":"#fff",
+      "border-action":"#fef",
+      "font-action":"#000"
+    },
+    "dark":{
+      "background-primary":"#000",
+      "border-primary":"#099",
+      "font-primary":"#fff",
+      "background-highlight":"#9ee",
+      "border-highlight":"e99",
+      "font-highlight":"#000",
+      "background-action":"#fff",
+      "border-action":"#efe",
+      "font-action":"#fff"
+    }
+  },
+
+
+  "dir":"auto",
+  "lang": "en-US",
+  "charset":"utf-8",
+
+
+  "permissions": ["webNavigation"],
+  "optional_permissions":[],
+
+
+  "referrer":"strict-origin",
+
+
+  "robots":"all",
+
+
+  "orientation":"any",
+  "viewport":["width=device-width","initial-scale=1.0"],
+  
+  
+  "shortcuts" : [
+      {
+        "name": "Home Page",
+        "url": "./template.php",
+        "description": "The app's Home page"
+      },
+      {
+          "name": "Search",
+          "url": "./search.php",
+          "description": "Search the app"
+      }
+  ],
+  
+  "icons": [
+    {
+      "src": "./icon180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose":"maskable"
+    },{
+      "src": "./icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  
+  
+  "screenshots" : [
+    {
+      "src": "./screenshot0.jpeg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ]
+  
+}
