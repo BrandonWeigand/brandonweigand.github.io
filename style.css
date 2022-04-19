@@ -2,7 +2,7 @@
 * Accessibility
 */
 
-html{
+#BODY{
     --tap_target:2rem;
     --menu_height:4rem;
     --menu_color_bg:var(--theme-color,blue);
@@ -14,8 +14,9 @@ html, html *{
     max-width: calc( 100vw - 1px );
 }
 
-body{
+body,#BODY{
     max-width: 100vw;
+    min-height: 100vh;
     overflow-x: hidden;
     margin:0px;
     padding:0px;
@@ -82,9 +83,11 @@ a{
     transition: all 1s;
 
     text-align: center;
-    background-color: var(--menu_color_bg);
+    background-color: var(--background-highlight);
     background-blend-mode: color-dodge;
-    border-left: 3px ridge black;
+    border-left: 3px ridge inherit;
+
+    overflow-y: auto;
 }
 
 #MENUBAR>span{
@@ -100,9 +103,9 @@ a{
 /**
 *  toggle the navbar or sidebar
 */
-input:checked[for="NAVBAR"]~header #NAVBAR,
+input:checked[for="NAVBAR"]~#BODY header #NAVBAR,
 #NAVBAR:focus-within,
-input:checked[for="SIDEBAR"]~header #SIDEBAR,
+input:checked[for="SIDEBAR"]~#BODY header #SIDEBAR,
 #SIDEBAR:focus-within{
     top:0px;
 }
@@ -110,14 +113,47 @@ input:checked[for="SIDEBAR"]~header #SIDEBAR,
 /**
 * Toggle the navbar icons
 */
-input:not(:checked)[for="NAVBAR"]~header .close_NAVBAR,
-input:checked[for="NAVBAR"]~header .open_NAVBAR,
-input:not(:checked)[for="SIDEBAR"]~header .close_SIDEBAR,
-input:checked[for="SIDEBAR"]~header .open_SIDEBAR{
+input:not(:checked)[for="NAVBAR"]~#BODY header .close_NAVBAR,
+input:checked[for="NAVBAR"]~#BODY header .open_NAVBAR,
+input:not(:checked)[for="SIDEBAR"]~#BODY header .close_SIDEBAR,
+input:checked[for="SIDEBAR"]~#BODY header .open_SIDEBAR{
     display: none;
+}
+
+/**
+* Basic style inheritance
+*/
+#BODY{
+    background-color: var(--background-primary);
+    border-color:var(--border-primary);
+    color:var(--font-primary);
+}
+
+.btn{
+    transition: background-color,border-color,color 0.5s;
+}
+
+.btn:focus-within,
+.btn:hover,
+.btn:focus-within:visited,
+.btn:hover:visited{
+    background-color: var(--background-highlight);
+    border-color:var(--border-highlight);
+    color:var(--font-highlight);
+}
+
+.btn:active,
+.btn:active:visited{
+    background-color: var(--background-action);
+    border-color:var(--border-action);
+    color:var(--font-action);
+}
+
+
+script,style,link{
+    display:none;
 }
 
 /**
 * DEBUGGING
 */
-#CONTENT{border: 10px solid red;}

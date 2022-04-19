@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://brandonweigand.tk</loc>
+		<loc>https://brandonweigand.github.io</loc>
 		<lastmod>2021-04-01</lastmod>
-	</url>
-	<url>
-		<loc>https://brandonweigand.tk/attribution.json</loc>
-		<lastmod>2021-04-01</lastmod>
-	</url>
-	<url>
-		<loc>https://brandonweigand.tk/README.md</loc>
-		<lastmod>2021-04-01</lastmod>
+		<txt>Home</txt>
+		<nav>NAVBAR</nav>
 	</url>
 	<url>
 		<loc>https://brandonweigand.github.io/BrandonWeigand/</loc>
 		<lastmod>2021-04-01</lastmod>
+		<txt>Portfolio</txt>
+		<nav>NAVBAR</nav>
 	</url>
 	<url>
-		<loc>https://brandonweigand.github.io/BrandonWeigand/attribution.json</loc>
+		<loc>https://brandonweigand.github.io/attribution.json</loc>
 		<lastmod>2021-04-01</lastmod>
+		<txt>Attribution</txt>
+		<target>_blank</target>
 	</url>
 	<url>
-		<loc>https://brandonweigand.github.io/BrandonWeigand/README.md</loc>
+		<loc>https://brandonweigand.github.io/README.md</loc>
 		<lastmod>2021-04-01</lastmod>
+		<txt>Readme</txt>
+		<target>_blank</target>
 	</url>
 	<url>
-		<loc>https://brandonweigand.github.io/BrandonWeigand/LICENSE</loc>
+		<loc>https://brandonweigand.github.io/LICENSE</loc>
 		<lastmod>2021-04-01</lastmod>
+		<txt>License</txt>
+		<target>_blank</target>
 	</url>
 </urlset>

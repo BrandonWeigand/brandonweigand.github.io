@@ -7,16 +7,31 @@
   "creator":"Brandon Weigand",
   "generator":"Brandon Weigand",
 
+  "contact":[
+    {
+      "user":"Brandon Weigand",
+      "user_link":"https://brandonweigand.github.io",
+      "email":"brandonweigand@gmail.com",
+      "email_link": "mailto:brandonweigand@gmail.com?subject=https%3A%2F%2Fbrandonweigand.github.io%2FBrandonWeigand%2F&amp;body=I%20saw%20your%20profile%20and%20wanted%20to%20contact%20you.",
+      "tel":"[+1] (315) 636-3009",
+      "tel_link":"tel:3156363009",
+      "sponsor":"Sponsor Me On Github",
+      "sponsor_link":"https://github.com/sponsors/BrandonWeigand",
+      "doc":"Resume",
+      "doc_link":"https://my.indeed.com/p/brandonw-2hizfzj"
+    }
+  ],
+
 
   "name": "Brandon Weigand's Github",
   "short_name": "BW Github",
-  "title":"A website for my public projects",
+  "title":"Brandon Weigand's public project site",
 
   "date":"2022-04-17 22:58:00",
   "last-modified":"2022-04-17 22:58:00",
 
 
-  "start_url": ".",
+  "start_url": "https://brandonweigand.github.io",
   "prefer_related_applications": true,
   "scope": "./",
   "homepage_url": "https://brandonweigand.github.io",
@@ -35,32 +50,32 @@
 
 
   "color-scheme":"light dark",
-  "theme_color":"red",
+  "theme_color":"#00ffb7",
   "background_color": "#fff",
 
 
   "color-schemes":{
     "light":{
-      "background-primary":"#fff",
-      "border-primary":"#fcc",
-      "font-primary":"#000",
-      "background-highlight":"#333",
-      "border-highlight":"3cc",
-      "font-highlight":"#fff",
-      "background-action":"#fff",
-      "border-action":"#fef",
-      "font-action":"#000"
+      "background-primary":"#c5fffd",
+      "border-primary":"#02f959",
+      "font-primary":"#000000",
+      "background-highlight":"#ff9cab",
+      "border-highlight":"#00ffff",
+      "font-highlight":"#000000",
+      "background-action":"#75ff69",
+      "border-action":"#02a3f9",
+      "font-action":"#000000"
     },
     "dark":{
-      "background-primary":"#000",
-      "border-primary":"#099",
-      "font-primary":"#fff",
-      "background-highlight":"#9ee",
-      "border-highlight":"e99",
-      "font-highlight":"#000",
-      "background-action":"#fff",
-      "border-action":"#efe",
-      "font-action":"#fff"
+      "background-primary":"#202929",
+      "border-primary":"#202929",
+      "font-primary":"#ffffff",
+      "background-highlight":"#422025",
+      "border-highlight":"#007474",
+      "font-highlight":"#ffffff",
+      "background-action":"#21461d",
+      "border-action":"#003652",
+      "font-action":"#ffffff"
     }
   },
 

@@ -1,0 +1,36 @@
+:root{
+    --theme-color:#00ffb7;
+    --background-primary:#c5fffd;
+    --border-primary:#02f959;
+    --font-primary:#000000;
+    --background-highlight:#ff9cab;
+    --border-highlight:#00ffff;       
+    --font-highlight:#000000;
+    --background-action:#75ff69;
+    --border-action:#02a3f9;
+    --font-action:#000000;
+}
+input#input_THEME_LIGHT:checked~#BODY{
+    --theme-color:#00ffb7;
+    --background-primary:#c5fffd;
+    --border-primary:#02f959;
+    --font-primary:#000000;
+    --background-highlight:#ff9cab;
+    --border-highlight:#00ffff;       
+    --font-highlight:#000000;
+    --background-action:#75ff69;
+    --border-action:#02a3f9;
+    --font-action:#000000;        
+}
+input#input_THEME_DARK:checked~#BODY{
+    --theme-color:#00ffb7;
+    --background-primary:#202929;
+    --border-primary:#202929;
+    --font-primary:#ffffff;
+    --background-highlight:#422025;
+    --border-highlight:#007474;       
+    --font-highlight:#ffffff;
+    --background-action:#21461d;
+    --border-action:#003652;
+    --font-action:#ffffff;        
+}
