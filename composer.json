@@ -1,0 +1,64 @@
+{
+    "name": "brandonweigand.github.io/brandonweigand.github.io",
+    "description": "The main repository for brandonweigand.github.io",
+    "type": "project",
+    "license": "https://raw.githubusercontent.com/BrandonWeigand/SAVCL/master/LICENSE",
+    "authors": [
+        {
+            "name": "Brandon Weigand",
+            "email": "brandonweigand@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2",
+        "vlucas/phpdotenv": "^5",
+        "oscarotero/env": "^2",
+        "roots/bedrock-autoloader": "^1",
+        "roots/bedrock-disallow-indexing": "^2",
+        "roots/wordpress": "^6",
+        "roots/wp-config": "^1",
+        "roots/wp-password-bcrypt": "^1",
+        "wpackagist-plugin/classic-editor": "*",
+        "wpackagist-theme/twentytwentyfour": "*"
+      },
+      "require-dev": {
+        "squizlabs/php_codesniffer": "^3",
+        "roave/security-advisories": "dev-latest"
+      },
+    "extra": {
+        "installer-paths": {
+            "web/wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "webroot-dir": "web/",
+        "wordpress-install-dir": "web/"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+          "composer/installers": true,
+          "roots/wordpress-core-installer": true
+        }
+      },
+    "repositories": [
+        {
+          "type":"composer",
+          "url":"https://wpackagist.org",
+          "only": [
+              "wpackagist-plugin/*",
+              "wpackagist-theme/*"
+          ]
+      }
+    ]
+}

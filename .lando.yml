@@ -1,0 +1,34 @@
+name: brandonweigand.github.io
+recipe: wordpress
+config:
+  webroot: web
+services:
+  appserver:
+    webroot: web
+    xdebug: debug
+    config:
+      php: .vscode/php.ini
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
+        DRUSH_OPTIONS_URI: 'https://brandonweigand.github.io.lndo.site'
+  database:
+    type: mysql
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+  mail:
+    type: mailhog
+    portforward: false
+    hogfrom:
+      - appserver
+      - phpmyadmin
+proxy:
+  appserver:
+    - brandonweigand.github.io.lndo.site
+  phpmyadmin:
+    - phpmyadmin.brandonweigand.github.io.lndo.site
+  mail:
+    - mail.brandonweigand.github.io.lndo.site
